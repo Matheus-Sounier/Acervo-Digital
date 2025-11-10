@@ -1,0 +1,34 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--gradient-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-login {
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    max-width: 450px;
+    width: 100%;
+    animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

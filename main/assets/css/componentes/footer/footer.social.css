@@ -1,0 +1,34 @@
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition-fast);
+    border: 2px solid transparent;
+}
+
+.redes-sociais a img {
+    width: 90%;
+    height: 90%;
+    object-fit: fill;
+    transition: filter 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    background: var(--color-primary);
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 5px 20px rgba(0, 188, 212, 0.4);
+}
+
+/* .redes-sociais a:hover img {
+    filter: brightness(1) invert(0);
+} */

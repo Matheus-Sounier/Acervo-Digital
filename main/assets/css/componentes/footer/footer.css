@@ -1,0 +1,16 @@
+.rodape {
+    background: var(--gradient-footer);
+    color: var(--color-white);
+    padding: 60px 40px 0;
+    margin-top: var(--spacing-lg);
+}
+
+.container-rodape {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}

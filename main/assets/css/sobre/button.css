@@ -1,0 +1,87 @@
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 50px 20px;
+        }
+
+.icon-button {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    animation: float 3s ease-in-out infinite;
+}
+
+.icon-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.icon-button:active {
+    transform: translate(-50%, -50%) scale(0.95);
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    fill: #667eea;
+    transition: transform 0.3s ease;
+}
+
+.icon-button.active {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+    pointer-events: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.close-button::before,
+.close-button::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: white;
+}
+
+.close-button::before {
+    transform: rotate(45deg);
+}
+
+.close-button::after {
+    transform: rotate(-45deg);
+}

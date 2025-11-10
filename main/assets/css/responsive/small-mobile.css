@@ -1,0 +1,97 @@
+@media (max-width: 480px) {
+    header {
+        padding: 12px 15px;
+    }
+    
+    .container-cabecalho {
+        gap: 10px;
+    }
+    
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .botao-busca {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .barra-busca input {
+        padding: 10px 45px 10px 12px;
+        font-size: 13px;
+    }
+    
+    .carrossel {
+        height: 280px;
+    }
+    
+    .overlay-slide {
+        padding: 20px;
+    }
+    
+    .overlay-slide h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .botao-carrossel {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .indicadores-carrossel {
+        bottom: 10px;
+        gap: 8px;
+    }
+    
+    .indicador {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .indicador.is-active {
+        width: 30px;
+    }
+    
+    .card-colecao img {
+        height: 250px;
+    }
+    
+    .titulo-card {
+        font-size: 1.2rem;
+    }
+    
+    .descricao-card {
+        font-size: 0.9rem;
+    }
+
+    body {
+        padding: 10px; /* CORREÇÃO: Reduzir padding em telas pequenas */
+    }
+
+    .cabecalho-login {
+        padding: 30px 20px; /* CORREÇÃO: Reduzir padding */
+    }
+
+    .cabecalho-login h1 {
+        font-size: 26px;
+    }
+
+    .formulario-login {
+        padding: 30px 20px;
+    }
+
+    .opcoes-formulario {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    /* CORREÇÃO: Ajustar botões sociais em mobile */
+    .login-social {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,34 @@
+/* Base */
+@import url('./base/reset.css');
+@import url('./base/variaveis.css');
+@import url('./base/globais.css');
+
+/* Layout */
+@import url('./layout/sections.css');
+@import url('./layout/grid.css');
+
+/* Header Components */
+@import url('./componentes/header/header.css');
+@import url('./componentes/header/logo.css');
+@import url('./componentes/header/pes-bar.css');
+@import url('./componentes/header/nav.css');
+@import url('./componentes/header/login.css');
+
+/* Footer Components */
+@import url('./componentes/footer/footer.css');
+@import url('./componentes/footer/footer.coluna.css');
+@import url('./componentes/footer/footer.social.css');
+@import url('./componentes/footer/footer.btn.css');
+
+/* Carousel Components */
+@import url('./componentes/carrossel/carrossel.css');
+@import url('./componentes/carrossel/carrossel.ctrl.css');
+@import url('./componentes/carrossel/carrossel.indica.css');
+
+/* Card Components */
+@import url('./componentes/cards/colecao.css');
+
+/* Responsive */
+@import url('./responsive/tablet.css');
+@import url('./responsive/mobile.css');
+@import url('./responsive/small-mobile.css');

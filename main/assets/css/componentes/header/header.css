@@ -1,0 +1,17 @@
+header {
+    background: linear-gradient(135deg, #00aac0 0%, #00af58 100%);
+    padding: 20px 40px;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+}
+
+.container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    gap: 30px;
+}

@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    
+    .container-cabecalho {
+        gap: 15px;
+    }
+    
+    .logo {
+        font-size: 1.1rem;
+        gap: 8px;
+    }
+    
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo span {
+        display: none;
+    }
+    
+    .container-busca {
+        max-width: 100%;
+        flex: 1;
+    }
+    
+    .barra-busca.is-active {
+        width: calc(100vw - 120px);
+    }
+    
+    .botao-fechar {
+        position: fixed;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    
+    .menu-navegacao {
+        display: none;
+    }
+    
+    .secao-hero,
+    .secao-colecoes {
+        padding: 40px 20px;
+    }
+    
+    .grid-colecoes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .titulo-secao {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .carrossel {
+        height: 350px;
+    }
+    
+    .overlay-slide h2 {
+        font-size: 2rem;
+    }
+    
+    .botao-carrossel {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .botao-anterior {
+        left: 10px;
+    }
+    
+    .botao-proximo {
+        right: 10px;
+    }
+    
+    .grid-colecoes {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .rodape {
+        padding: 40px 20px 0;
+    }
+    
+    .container-rodape {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    
+    .rodape-inferior {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .links-legais {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-login {
+        max-width: 500px;
+    }
+    
+    .login-social {
+        flex-direction: column;
+    }
+    
+    .btn-rede {
+        width: 100%;
+    }
+}

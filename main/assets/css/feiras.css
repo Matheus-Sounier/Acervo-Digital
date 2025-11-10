@@ -1,0 +1,96 @@
+/*imports gerais */
+@import url('./base/reset.css');
+@import url('./base/variaveis.css');
+@import url('./base/globais.css');
+@import url('./layout/sections.css');
+@import url('./componentes/footer/footer.css');
+@import url('./componentes/footer/footer.coluna.css');
+@import url('./componentes/footer/footer.social.css');
+@import url('./componentes/footer/footer.btn.css');
+@import url('./pages/feira-2024.css');
+
+/*fonts*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Adicione uma classe no body das páginas de feira: <body class="feira"> */
+body.feira {
+  /* exemplo de override de espaçamento */
+    --spacing: 60px;
+}
+
+.hero-projeto {
+  /* ajuste de posição da imagem de fundo para feiras */
+    background-position: center 30%;
+}
+
+.container-projeto {
+    padding: var(--spacing) 24px;
+}
+
+/* pequenas customizações que só as páginas de feiras usam */
+.feira__banner {
+    height: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Header / container compartilhado */
+.container-cabecalho, .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo, .logo-projeto {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Projetos / cards (reaproveitado pelo index e pelas páginas de feiras) */
+.projetos-relacionados {
+    background: var(--color-white);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.cards-relacionados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card-relacionado, .card-colecao {
+    background: var(--color-bg-light);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-relacionado:hover, .card-colecao:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-relacionado img, .card-colecao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-relacionado-content, .conteudo-card {
+    padding: 20px;
+}
+
+.card-relacionado h3,
+.card-colecao .titulo-card {
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}

@@ -1,0 +1,101 @@
+.mini-page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 500px;
+    max-width: 90%;
+    max-height: 85vh;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 9999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+        }
+
+.mini-page.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.mini-page-header {
+    background: linear-gradient(135deg, #23df8a 0%, #05d053 100%);
+    padding: 25px;
+    color: white;
+    position: relative;
+}
+
+.mini-page-header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.mini-page-header p {
+    font-size: 14px;
+    opacity: 0.9;
+    font-size: medium;
+}
+
+.mini-page-content {
+    padding: 25px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.mini-page-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mini-page-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.mini-page-content::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+.mini-page-content::-webkit-scrollbar-thumb:hover {
+    background: #5568d3;
+}
+
+.content-item {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+.content-item h3{
+    text-align: center;
+}
+
+.content-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.content-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.content-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.content-item h3 {
+    color: #667eea;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.content-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}

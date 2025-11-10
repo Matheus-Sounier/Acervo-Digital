@@ -1,0 +1,33 @@
+.secao-hero {
+    padding: var(--spacing-lg) var(--spacing-md);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.secao-colecoes {
+    padding: var(--spacing-lg) var(--spacing-md);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.titulo-secao {
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--gradient-header);
+    border-radius: 2px;
+}

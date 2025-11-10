@@ -1,0 +1,23 @@
+@import url('./componentes/header/header.css');
+@import url('./componentes/header/logo.css');
+@import url('./componentes/header/nav.css');
+
+@import url('./componentes/footer/footer.css');
+@import url('./componentes/footer/footer.coluna.css');
+@import url('./componentes/footer/footer.social.css');
+@import url('./componentes/footer/footer.btn.css');
+
+@import url('./pages/feira-2024.css');
+@import url('./sobre/button.css');
+@import url('./sobre/minipagina.css');
+@import url('./sobre/animation.css');
+@import url('./sobre/overlay.css');
+
+
+@import url('./base/reset.css');
+@import url('./base/variaveis.css');
+@import url('./base/globais.css');
+
+/*fonts*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');

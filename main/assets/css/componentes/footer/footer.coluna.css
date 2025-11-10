@@ -1,0 +1,95 @@
+.coluna-rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-rodape {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo-rodape i {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.logo-rodape h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.descricao-rodape {
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+}
+
+.titulo-coluna {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Listas de Links */
+.lista-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-links li {
+    margin-bottom: 12px;
+}
+
+.lista-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    display: inline-block;
+    position: relative;
+}
+
+.lista-links a::before {
+    content: '›';
+    margin-right: 8px;
+    color: var(--color-primary);
+    font-weight: bold;
+    transition: margin-right 0.3s;
+}
+
+.lista-links a:hover {
+    color: var(--color-primary);
+    transform: translateX(5px);
+}
+
+.lista-links a:hover::before {
+    margin-right: 12px;
+}
+
+/* Lista de Contato */
+.lista-contato {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-contato li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.lista-contato i {
+    color: var(--color-primary);
+    font-size: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}

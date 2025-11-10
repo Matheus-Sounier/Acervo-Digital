@@ -1,0 +1,36 @@
+.botao-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--color-accent);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: var(--transition-fast);
+    z-index: var(--z-carousel-controls);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-carrossel:hover {
+    background: var(--color-white);
+    transform: translateY(-50%) scale(1.15);
+}
+
+.botao-carrossel:active {
+    transform: translateY(-50%) scale(1.05);
+}
+
+.botao-anterior {
+    left: 20px;
+}
+
+.botao-proximo {
+    right: 20px;
+}

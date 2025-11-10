@@ -1,0 +1,47 @@
+:root {
+    /* Colors */
+    --color-primary: #00bcd4;
+    --color-primary-dark: #006064;
+    --color-secondary: #00cd67;
+    --color-accent: #00838f;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-text: #333;
+    --color-text-light: #666;
+    /* Gradients */
+    --gradient-header: linear-gradient(135deg, #00bcd4 0%, #00cd67 100%);
+    --gradient-footer: linear-gradient(135deg, #006064 0%, #00838f 100%);
+    --gradient-carousel: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+    --gradient-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    --gradient-bg: linear-gradient(135deg, #e0f2f1 0%, #f4f4f4 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 15px 50px rgba(95, 150, 6, 0.2);
+    --shadow-gb: 0 20px 70px rgba(70, 163, 135, 0.9);
+    
+    /* Transitions */
+    --transition-fast: all 0.3s ease;
+    --transition-smooth: all 0.4s ease-in-out;
+    
+    /* Z-index */
+    --z-header: 1000;
+    --z-carousel-controls: 10;
+    
+    /* Spacing */
+    --max-width: 1400px;
+    --spacing-sm: 20px;
+    --spacing-md: 40px;
+    --spacing-lg: 80px;
+
+    /* Root da página feira-geral*/
+    --bg-dark: #0a0c10;
+    --card-bg-dark: rgba(20, 25, 35, 0.9);
+    --accent-cyan: #00f5ff;
+    --text-light: #fafbfd;
+    --text-dim: #c6c7cc;
+    --radius-lg: 20px;
+    --shadow-cyan: 0 10px 30px rgba(0, 255, 255, 0.2);
+    --shadow-cyan-glow: 0 0 12px rgba(0, 255, 242, 0.25), 0 0 25px rgba(0, 255, 255, 0.15) inset;
+}
