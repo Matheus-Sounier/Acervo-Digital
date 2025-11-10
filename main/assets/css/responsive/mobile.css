@@ -21,6 +21,22 @@
         display: none;
     }
     
+    /* Mostrar hamburger em telas pequenas */
+    .btn-hamburger {
+        display: flex;
+    }
+    
+    /* Esconder menu desktop */
+    .menu-navegacao,
+    .link-login {
+        display: none !important;
+    }
+    
+    /* Mostrar menu mobile */
+    .menu-mobile {
+        display: flex;
+    }
+    
     .container-busca {
         max-width: 100%;
         flex: 1;
@@ -34,10 +50,6 @@
         position: fixed;
         right: 20px;
         transform: translateY(-50%);
-    }
-    
-    .menu-navegacao {
-        display: none;
     }
     
     .secao-hero,

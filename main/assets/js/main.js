@@ -3,6 +3,7 @@ import { inicializarCarrossel } from './modules/carrossel.js';
 import { inicializarSmoothScroll } from './modules/scroll.js';
 import { inicializarAnimacoes } from './modules/animacoes.js';
 import { inicializarProjetos } from './feira/projetos.js';
+import { inicializarMenuMobile } from './modules/menu-mobile.js';
 
 
 // Aguarda DOM carregar
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inicializarSmoothScroll();
         inicializarAnimacoes();
         inicializarProjetos();
+        inicializarMenuMobile();
 
         // console.log('%c✅ Aplicação inicializada com sucesso!', 'color: #00cd67; font-weight: bold;');
     } catch (error) {
