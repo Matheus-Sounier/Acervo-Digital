@@ -1,71 +1,25 @@
 @media (max-width: 1024px) {
-    header {
-        padding: 15px 30px;
-    }
-    
-    .container-cabecalho {
-        gap: 20px;
-    }
-    
-    .logo {
-        font-size: 1.3rem;
-        gap: 10px;
-    }
-    
-    .logo img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .container-busca {
-        max-width: 350px;
-    }
-    
-    .barra-busca.is-active {
-        width: 350px;
-    }
-    
-    .menu-navegacao {
-        gap: 20px;
-    }
-    
-    .link-navegacao {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-    
-    .botao-busca span {
-        display: none;
-    }
-    
-    .botao-busca {
-        padding: 12px;
-        width: 45px;
-        height: 45px;
-        justify-content: center;
-    }
-    
-    .grid-colecoes {
+    /* Header */
+    header { padding: 15px 30px; }
+    .container-cabecalho { gap: 20px; }
+    .logo { font-size: 1.3rem; gap: 10px; }
+    .logo img { width: 40px; height: 40px; }
+    .menu-navegacao { gap: 20px; }
+    .link-navegacao { font-size: 14px; padding: 6px 12px; }
+
+    /* Carrossel */
+    .carrossel { height: 400px; }
+    .overlay-slide h2 { font-size: 2.5rem; }
+
+    /* Cards */
+    .grid-colecoes, .card-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        padding: 20px;
     }
 
+    /* Footer */
     .container-rodape {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
-    }
-    
-    .carrossel {
-        height: 400px;
-    }
-    
-    .overlay-slide h2 {
-        font-size: 2.5rem;
-    }
-    
-    .grid-colecoes {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 30px;
     }
 }

@@ -38,7 +38,7 @@
     --accent-cyan: #00f5ff;
     --text-light: #fafbfd;
     --text-dim: #c6c7cc;
-    --radius-lg: 20px;
+    --radius-lg: 15px;
     --shadow-cyan: 0 10px 30px rgba(0, 255, 255, 0.2);
     --shadow-cyan-glow: 0 0 12px rgba(0, 255, 242, 0.25), 0 0 25px rgba(0, 255, 255, 0.15) inset;
 }

@@ -1,13 +1,3 @@
-:root {
-  --bg: #0a0c10;
-  --card-bg: rgba(20, 25, 35, 0.9);
-  --accent: #00f5ff;
-  --text: #fafbfd;
-  --text-dim: #c6c7cc;
-  --radius: 20px;
-  --shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
-}
-
 .header-projeto {
     background: var(--gradient-header);
     padding: 15px 25px;
@@ -56,7 +46,7 @@
 }
 
 section {
-  color: var(--text);
+  color: var(--text-light);
   font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
@@ -80,20 +70,20 @@ section {
   transform-style: preserve-3d;
 }
 
-/* section wrapper for the collection page: behaves like a normal section, not a card */
 .secao-colecoes {
-  display: block; /* override generic `section { display: flex }` */
-  padding: 40px 20px; /* keep spacing but not full viewport centering */
-  min-height: auto; /* do not force full viewport height */
-  color: var(--text);
+  display: block;
+  padding: 40px 20px;
+  min-height: auto;
+  color: var(--text-light);
 }
 
 .card-inner {
   position: relative;
   width: 100%;
   min-height: 360px;
+  max-height: 360px;
   transform-style: preserve-3d;
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
@@ -101,11 +91,12 @@ section {
   transform: rotateY(180deg);
 }
 
+/* ========== ESTILOS BASE DOS CARDS (FRENTE E VERSO) ========== */
 .card-face {
   position: absolute;
   inset: 0;
-  border-radius: var(--radius);
-  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  background: var(--card-bg-dark);
   box-shadow: var(--shadow-gb);
   padding: 24px;
   display: flex;
@@ -120,11 +111,11 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   box-shadow: 0 0 12px rgba(0, 255, 242, 0.25),
               0 0 25px rgba(0, 255, 255, 0.15) inset;
   opacity: 0;
-  pointer-events: none; /* allow clicks to pass through the decorative overlay */
+  pointer-events: none;
   transition: opacity 0.4s;
 }
 
@@ -149,39 +140,65 @@ section {
   }
 }
 
-.card-front h2 {
-  font-family: "Orbitron", sans-serif;
-  font-size: 1.6rem;
-  color: whitesmoke;
-  margin-bottom: 0.5rem;
-}
-
-.card-front p {
-  font-size: 1rem;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
-
-.one {
-  background: url("https://lh3.googleusercontent.com/p/AF1QipPCRJxqnv-HbHv_LjZcostcq3hkNxy8EtnLygqc=s680-w680-h510-rw");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+/* ========== FRENTE DO CARD (texto padrão) ========== */
 .card-back {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .card-back h3 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.4rem;
-  color: var(--accent);
+  color: var(--color-white);
   margin-bottom: 1rem;
+}
+
+/* ========== FRENTE COM IMAGEM (apenas adiciona imagem) ========== */
+.card-front.one {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Escurece e dessatura a imagem */
+    filter: brightness(0.68) contrast(1.4) saturate(0.7);
+    transition: all 0.4s ease;
+}
+
+/* Texto sobre a imagem precisa de sombra forte */
+.card-front.one h2,
+.card-front.one p {
+    color: var(--color-primary);
+    text-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.9),
+        0 2px 4px rgba(0, 0, 0, 0.8),
+        0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Hover: clareia a imagem */
+.card:hover .card-front.one{
+    filter: brightness(0.75) contrast(1) saturate(0.6);
+}
+
+/* ========== VERSO DO CARD ========== */
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.card-back h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.4rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.card-back p {
+  color: var(--color-text-light);
+  line-height: 1.6;
 }
 
 ul.features {
@@ -215,45 +232,53 @@ ul.features li {
 }
 
 .cta-buttons a.primary {
-  background: var(--accent);
+  background: var(--accent-cyan);
   color: #000;
 }
 
 .cta-buttons a.primary:hover {
-  background: #00ffff;
+  background: var(--color-primary);
+  transform: translateY(-2px);
 }
 
 .cta-buttons a.secondary {
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  border: 1px solid var(--color-secondary);
+  color: var(--accent-cyan);
 }
 
 .cta-buttons a.secondary:hover {
   background: rgba(0, 255, 255, 0.1);
 }
 
+/* ========== RESPONSIVO ========== */
 @media (max-width: 768px) {
-  body {
+  section {
     padding: 20px;
   }
+  
   .card-inner {
     min-height: 300px;
+    max-height: 300px;
   }
+  
   .card-face {
     padding: 18px;
   }
+  
   .card-front h2 {
     font-size: 1.3rem;
   }
+  
   .card-back h3 {
     font-size: 1.2rem;
   }
+  
   ul.features li {
     font-size: 0.9rem;
   }
 }
 
-h1{
+h1 {
   text-align: center;
   color: rgb(0, 0, 0);
   font-weight: bold;

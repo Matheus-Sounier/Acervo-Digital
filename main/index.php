@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Museu Virtual - Explore projetos inovadores e coleções digitais">
+    <meta name="description" content="Acervo Digital - Explore projetos inovadores e coleções digitais">
     <title>Acervo Digital FUCAPI</title>
     
     <!-- Font Awesome -->

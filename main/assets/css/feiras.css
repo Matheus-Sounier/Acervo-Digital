@@ -2,18 +2,17 @@
 @import url('./base/reset.css');
 @import url('./base/variaveis.css');
 @import url('./base/globais.css');
-@import url('./layout/sections.css');
+
+/* Footer */
 @import url('./componentes/footer/footer.css');
 @import url('./componentes/footer/footer.coluna.css');
 @import url('./componentes/footer/footer.social.css');
 @import url('./componentes/footer/footer.btn.css');
-@import url('./pages/feira-2024.css');
 
-/*fonts*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Definições específicas para páginas de feiras */
+/* @import url('./feiras/feira-geral.css'); */
+@import url('./feiras/feira-2024.css');
 
-/* Adicione uma classe no body das páginas de feira: <body class="feira"> */
 body.feira {
   /* exemplo de override de espaçamento */
     --spacing: 60px;

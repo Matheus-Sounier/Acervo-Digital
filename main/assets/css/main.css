@@ -10,9 +10,9 @@
 /* Header Components */
 @import url('./componentes/header/header.css');
 @import url('./componentes/header/logo.css');
-@import url('./componentes/header/pes-bar.css');
-@import url('./componentes/header/nav.css');
 @import url('./componentes/header/login.css');
+@import url('./componentes/header/nav.css');
+@import url('./componentes/header/pes-bar.css');
 
 /* Footer Components */
 @import url('./componentes/footer/footer.css');
@@ -32,3 +32,4 @@
 @import url('./responsive/tablet.css');
 @import url('./responsive/mobile.css');
 @import url('./responsive/small-mobile.css');
+@import url('./responsive/extra-small.css');

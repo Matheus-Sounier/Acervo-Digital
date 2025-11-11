@@ -1,4 +1,5 @@
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
+    /* Header 
     header {
         padding: 15px 20px;
     }
@@ -18,25 +19,24 @@
     }
     
     .logo span {
-        display: none;
+        display: none; /* Esconde texto do logo em mobile 
     }
     
-    /* Mostrar hamburger em telas pequenas */
+    /* Menu Mobile 
     .btn-hamburger {
         display: flex;
     }
     
-    /* Esconder menu desktop */
     .menu-navegacao,
     .link-login {
         display: none !important;
     }
     
-    /* Mostrar menu mobile */
     .menu-mobile {
         display: flex;
     }
     
+    /* Busca 
     .container-busca {
         max-width: 70%;
         flex: 1;
@@ -44,36 +44,44 @@
     
     .barra-busca.is-active {
         width: calc(100vw - 100px);
+        max-width: 100%;
     }
     
     .botao-fechar {
         position: fixed;
         right: 20px;
+        top: 50%;
         transform: translateY(-50%);
+        z-index: 1001;
     }
     
+    /* Seções 
     .secao-hero,
     .secao-colecoes {
         padding: 40px 20px;
     }
     
-    .grid-colecoes {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 15px;
-    }
-
     .titulo-secao {
         font-size: 2rem;
         margin-bottom: 30px;
     }
     
+    /* Carrossel 
     .carrossel {
         height: 350px;
     }
     
+    .overlay-slide {
+        padding: 30px 20px;
+    }
+    
     .overlay-slide h2 {
         font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .overlay-slide p {
+        font-size: 1rem;
     }
     
     .botao-carrossel {
@@ -90,11 +98,54 @@
         right: 10px;
     }
     
-    .grid-colecoes {
+    /* Grid de coleções e cards 
+    .grid-colecoes,
+    .card-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
     
+    .card-colecao img {
+        height: 250px;
+    }
+    
+    /* Cards das feiras 
+    .card-inner {
+        min-height: 320px;
+        max-height: 320px;
+    }
+    
+    .card-face {
+        padding: 20px;
+    }
+    
+    .card-front h2 {
+        font-size: 1.4rem;
+    }
+    
+    .card-back h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Botão adicionar projeto 
+    .btn-adiciona-projeto-section {
+        padding: 60px 20px;
+    }
+    
+    .container-adiciona-projeto {
+        padding: 30px 20px;
+    }
+    
+    .container-adiciona-projeto h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-adiciona-projeto {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    /* Rodapé 
     .rodape {
         padding: 40px 20px 0;
     }
@@ -108,22 +159,43 @@
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        padding: 20px 0;
     }
     
     .links-legais {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
-
+    
+    /* Login 
     .container-login {
         max-width: 500px;
+        margin: 20px;
+        padding: 30px 20px;
     }
     
     .login-social {
         flex-direction: column;
+        gap: 15px;
     }
     
     .btn-rede {
         width: 100%;
     }
+} */
+
+
+@media (max-width: 768px) {
+    header { padding: 15px 20px; }
+    .menu-navegacao, .link-login { display: none; }
+    .btn-hamburger { display: flex; }
+    .menu-mobile { display: flex; }
+    .container-busca { max-width: 70%; }
+
+    .carrossel { height: 350px; }
+    .overlay-slide h2 { font-size: 2rem; }
+    .grid-colecoes, .card-grid { grid-template-columns: 1fr; }
+
+    .container-login { max-width: 500px; }
 }

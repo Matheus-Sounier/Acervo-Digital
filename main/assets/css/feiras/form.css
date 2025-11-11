@@ -1,0 +1,173 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--color-white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-gb);
+            max-width: 500px;
+            width: 100%;
+            margin: 2.5rem;
+        }
+
+        .cabecalho-login {
+            background: var(--gradient-header);
+            padding: 40px 30px;
+            text-align: center;
+            color: var(--color-white);
+            border-radius: 7px;
+            margin-bottom: 2rem;
+        }
+
+        .cabecalho-login h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 0; /* CORREÇÃO: Reset de margem */
+        }
+
+        .cabecalho-login p {
+            font-size: 14px;
+            opacity: 0.9;
+            margin: 0; /* CORREÇÃO: Reset de margem */
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .image-upload {
+            position: relative;
+            border: 2px dashed #00bcd4;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: var(--color-white);
+        }
+
+        .image-upload:hover {
+            border-color: var(--color-secondary);
+            background: var(--color-white);
+        }
+
+        .image-upload input[type="file"] {
+            display: none;
+        }
+
+        .upload-icon {
+            font-size: 48px;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .upload-text {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .image-preview {
+            margin-top: 15px;
+            display: none;
+        }
+
+        .image-preview img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-gb);
+        }
+
+        .remove-image {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #ff4757;
+            color: var(--color-white);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .remove-image:hover {
+            background: #ff3838;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--gradient-header);
+            color: var(--color-white);
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .success-message {
+            display: none;
+            padding: 15px;
+            background: var(--color-secondary);
+            color: var(--color-white);
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }

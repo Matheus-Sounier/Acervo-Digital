@@ -1,4 +1,5 @@
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
+    /* Header 
     header {
         padding: 12px 15px;
     }
@@ -12,6 +13,7 @@
         height: 30px;
     }
     
+    /* Busca 
     .botao-busca {
         padding: 10px;
         width: 40px;
@@ -23,12 +25,29 @@
         font-size: 13px;
     }
     
+    .barra-busca.is-active {
+        width: calc(100vw - 80px);
+    }
+    
+    /* Seções 
+    .secao-hero,
+    .secao-colecoes {
+        padding: 30px 15px;
+    }
+    
+    .titulo-secao {
+        font-size: 1.75rem;
+        margin-bottom: 25px;
+    }
+    
+    /* Carrossel 
     .carrossel {
         height: 280px;
+        border-radius: 15px;
     }
     
     .overlay-slide {
-        padding: 20px;
+        padding: 20px 15px;
     }
     
     .overlay-slide h2 {
@@ -36,10 +55,23 @@
         margin-bottom: 10px;
     }
     
+    .overlay-slide p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
     .botao-carrossel {
         width: 40px;
         height: 40px;
         font-size: 16px;
+    }
+    
+    .botao-anterior {
+        left: 8px;
+    }
+    
+    .botao-proximo {
+        right: 8px;
     }
     
     .indicadores-carrossel {
@@ -56,42 +88,185 @@
         width: 30px;
     }
     
+    /* Cards de coleções 
+    .card-colecao {
+        border-radius: 15px;
+    }
+    
     .card-colecao img {
-        height: 250px;
+        height: 220px;
+    }
+    
+    .conteudo-card {
+        padding: 20px 15px;
     }
     
     .titulo-card {
         font-size: 1.2rem;
+        margin-bottom: 10px;
     }
     
     .descricao-card {
         font-size: 0.9rem;
+        line-height: 1.5;
     }
-
+    
+    /* Cards das feiras 
+    .card-grid {
+        gap: 30px;
+    }
+    
+    .card-inner {
+        min-height: 280px;
+        max-height: 280px;
+    }
+    
+    .card-face {
+        padding: 18px;
+    }
+    
+    .card-front h2 {
+        font-size: 1.2rem;
+    }
+    
+    .card-front p {
+        font-size: 0.9rem;
+    }
+    
+    .card-back h3 {
+        font-size: 1.1rem;
+    }
+    
+    .card-back p {
+        font-size: 0.9rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cta-buttons a {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+    
+    /* Botão adicionar projeto 
+    .btn-adiciona-projeto-section {
+        padding: 50px 15px;
+    }
+    
+    .container-adiciona-projeto {
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+    
+    .container-adiciona-projeto h2 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+    
+    .container-adiciona-projeto .subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+    
+    .btn-adiciona-projeto {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+        gap: 8px;
+    }
+    
+    .btn-icon {
+        font-size: 1.3rem;
+    }
+    
+    /* Rodapé 
+    .rodape {
+        padding: 35px 15px 0;
+    }
+    
+    .coluna-rodape {
+        text-align: center;
+    }
+    
+    .titulo-coluna {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    .descricao-rodape {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .lista-links,
+    .lista-contato {
+        font-size: 0.9rem;
+    }
+    
+    .redes-sociais {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .redes-sociais img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .rodape-inferior {
+        padding: 18px 0;
+        font-size: 0.85rem;
+    }
+    
+    /* Login 
     body {
-        padding: 10px; /* CORREÇÃO: Reduzir padding em telas pequenas */
+        padding: 10px;
     }
-
+    
     .cabecalho-login {
-        padding: 30px 20px; /* CORREÇÃO: Reduzir padding */
+        padding: 30px 20px;
+        border-radius: 7px 7px 0 0;
     }
-
+    
     .cabecalho-login h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
-
+    
+    .cabecalho-login p {
+        font-size: 13px;
+    }
+    
     .formulario-login {
         padding: 30px 20px;
     }
-
+    
     .opcoes-formulario {
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
     }
     
-    /* CORREÇÃO: Ajustar botões sociais em mobile */
     .login-social {
         flex-direction: column;
+        gap: 12px;
     }
+    
+    .btn-rede {
+        font-size: 14px;
+        padding: 12px;
+    }
+} */
+
+
+@media (max-width: 480px) {
+    header { padding: 12px 15px; }
+    .logo img { width: 30px; height: 30px; }
+    .carrossel { height: 280px; border-radius: 15px; }
+    .overlay-slide h2 { font-size: 1.5rem; }
+    .titulo-secao { font-size: 1.75rem; }
+
+    .card-inner { min-height: 280px; }
+    .rodape { padding: 35px 15px 0; }
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Imagem</title>
+    <link rel="stylesheet" href="../../css/pages/form.css">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho-login">
+            <h1>Seja Bem-vindo!</h1>
+            <p>Preencha o formulario a seguir:</p>
+        </div>
+        
+        <form id="myForm">
+            <div class="form-group">
+                <label for="titulo">Titulo(Frente)</label>
+                <input type="text" id="titulo" name="Titulo" required placeholder="Digite o titulo (Frente)">
+            </div>
+
+            <div class="form-group">
+                <label for="titulo">Titulo(Costa)</label>
+                <input type="text" id="titulo" name="Titulo" required placeholder="Digite o titulo (Costa)">
+            </div>
+
+            <div class="form-group">
+                <label for="detalhes">Detalhes do Projeto</label>
+                <textarea id="detalhes" name="Detalhes" required placeholder="Digite os detalhes aqui"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Imagem</label>
+                <div class="image-upload" id="imageUpload">
+                    <input type="file" id="imageInput" accept="image/*">
+                    <div class="upload-icon">📷</div>
+                    <div class="upload-text">
+                        <strong>Clique aqui</strong> para selecionar uma imagem<br>
+                        <small>PNG, JPG ou GIF</small>
+                    </div>
+                </div>
+                <div class="image-preview" id="imagePreview">
+                    <img id="previewImg" src="" alt="Preview">
+                    <br>
+                    <button type="button" class="remove-image" id="removeImage">Remover Imagem</button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Formulário</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            ✓ Formulário enviado com sucesso!
+        </div>
+    </div>
+
+<script src="../../js/pages/form.js"></script>
+</body>
+</html>
