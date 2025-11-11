@@ -25,15 +25,12 @@
     --transition-fast: all 0.3s ease;
     --transition-smooth: all 0.4s ease-in-out;
     
-    /* Z-index */
-    --z-header: 1000;
-    --z-carousel-controls: 10;
-    
     /* Spacing */
     --max-width: 1400px;
     --spacing-sm: 20px;
     --spacing-md: 40px;
     --spacing-lg: 80px;
+    --padding-header: 15px 25px;
 
     /* Root da página feira-geral*/
     --bg-dark: #0a0c10;

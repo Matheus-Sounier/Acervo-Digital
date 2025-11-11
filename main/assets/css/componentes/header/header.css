@@ -1,10 +1,10 @@
 header {
     background: linear-gradient(135deg, #00aac0 0%, #00af58 100%);
-    padding: 20px 40px;
+    padding: 15px 25px;
     box-shadow: var(--shadow-md);
     position: sticky;
     top: 0;
-    z-index: var(--z-header);
+    z-index: 100;
 }
 
 .container-cabecalho {
@@ -25,26 +25,57 @@ header {
     cursor: pointer;
     gap: 5px;
     padding: 5px;
+    z-index: 1000;
 }
 
-.btn-hamburger span {
+/* .btn-hamburger span {
     width: 24px;
     height: 3px;
+    left: 0;    
     background: var(--color-white);
     border-radius: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+} */
+
+.btn-hamburger span {
+    display: block;
+    height: 3px;
+    width: 24px;
+    background: var(--color-white);
+    border-radius: 10px;
+    right: 0;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.btn-hamburger.is-active span:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 10px);
+.btn-hamburger span:nth-child(1) {
+    top: 0;
 }
 
-.btn-hamburger.is-active span:nth-child(2) {
+.btn-hamburger span:nth-child(2) {
+    top: 18px;
+}
+
+.btn-hamburger span:nth-child(3) {
+    top: 36px;
+}
+
+.btn-hamburger.active span {
+    background: white;
+}
+
+.btn-hamburger.active span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg) scaleX(1.2);
+}
+
+.btn-hamburger.active span:nth-child(2) {
     opacity: 0;
+    transform: translateX(-30px);
 }
 
-.btn-hamburger.is-active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+.btn-hamburger.active span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg) scaleX(1.2);
 }
 
 /* Mobile Menu */
@@ -57,9 +88,9 @@ header {
     max-width: 300px;
     height: 100vh;
     background: var(--color-white);
-    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
     transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1001;
+    z-index: 1000;
     flex-direction: column;
     padding: 20px 0;
 }
@@ -71,10 +102,10 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: visibility 0.3s ease;
     pointer-events: none;
 }
 
@@ -92,13 +123,12 @@ header {
     color: var(--color-black);
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.2s ease;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: backgrond 0.2s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.01);
 }
 
 .mobile-link:hover {
-    background: rgba(0, 170, 192, 0.1);
-    padding-left: 32px;
+    background: rgba(0, 0, 0, 0.5)
 }
 
 .login-mobile {

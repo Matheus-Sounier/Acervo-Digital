@@ -3,7 +3,7 @@
 /* ========== HEADER SIMPLIFICADO ========== */
 .header-projeto {
     background: var(--gradient-header);
-    padding: 20px 40px;
+    padding: 15px 25px;
     box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
@@ -36,10 +36,9 @@
 }
 
 .logo, .logo-projeto {
-    color: var(--color-white);
-    font-size: 1.3rem;
-    font-weight: bold;
     text-decoration: none;
+    width: 50px;
+    height: 50px;
 }
 
 /* ========== HERO SECTION ========== */
@@ -51,7 +50,7 @@
     justify-content: center;
     text-align: center;
     color: var(--color-white);
-    padding: 60px 20px;
+    padding: 40px 20px;
     position: relative;
     overflow: hidden;
 }

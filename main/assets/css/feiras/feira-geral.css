@@ -1,8 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap");
+:root {
+  --bg: #0a0c10;
+  --card-bg: rgba(20, 25, 35, 0.9);
+  --accent: #00f5ff;
+  --text: #fafbfd;
+  --text-dim: #c6c7cc;
+  --radius: 20px;
+  --shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
 
 .header-projeto {
     background: var(--gradient-header);
-    padding: 20px 40px;
+    padding: 15px 25px;
     box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
@@ -41,51 +49,10 @@
     text-decoration: none;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-  .header-projeto {
-    padding: 16px 20px;
-  }
-  .container-cabecalho, .container-header {
-    padding: 0 10px;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .header-projeto {
-    padding: 12px 8px;
-  }
-  .container-cabecalho, .container-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 0 5px;
-  }
-  .logo, .logo-projeto {
-    font-size: 1.2rem;
-  }
-  .btn-voltar {
-    padding: 8px 12px;
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-projeto {
-    padding: 8px 2px;
-  }
-  .container-cabecalho, .container-header {
-    gap: 6px;
-    padding: 0 2px;
-  }
-  .logo, .logo-projeto {
-    font-size: 1rem;
-  }
-  .btn-voltar {
-    padding: 6px 8px;
-    font-size: 0.85rem;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -113,6 +80,7 @@ section {
   transform-style: preserve-3d;
 }
 
+/* section wrapper for the collection page: behaves like a normal section, not a card */
 .secao-colecoes {
   display: block; /* override generic `section { display: flex }` */
   padding: 40px 20px; /* keep spacing but not full viewport centering */
@@ -125,8 +93,7 @@ section {
   width: 100%;
   min-height: 360px;
   transform-style: preserve-3d;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
+  border-radius: var(--radius);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
@@ -137,7 +104,7 @@ section {
 .card-face {
   position: absolute;
   inset: 0;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   background: var(--card-bg);
   box-shadow: var(--shadow-gb);
   padding: 24px;
@@ -153,7 +120,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   box-shadow: 0 0 12px rgba(0, 255, 242, 0.25),
               0 0 25px rgba(0, 255, 255, 0.15) inset;
   opacity: 0;
@@ -182,11 +149,6 @@ section {
   }
 }
 
-.card-front {
-  background: #007bff; /* Cor ou imagem de fundo da frente */
-  color: white;
-}
-
 .card-front h2 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.6rem;
@@ -208,13 +170,11 @@ section {
 }
 
 .card-back {
-  background: #6c757d; /* Cor ou imagem de fundo do verso */
-  color: white;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: var(--radius-lg);
+  
 }
 
 .card-back h3 {

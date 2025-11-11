@@ -38,12 +38,12 @@
     }
     
     .container-busca {
-        max-width: 100%;
+        max-width: 70%;
         flex: 1;
     }
     
     .barra-busca.is-active {
-        width: calc(100vw - 120px);
+        width: calc(100vw - 100px);
     }
     
     .botao-fechar {
