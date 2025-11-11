@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+    .menu-navegacao {
+        margin: 0 -60px; /* Reduz margem negativa */
+        gap: 20px;
+    }
+    
+    .container-busca {
+        max-width: 350px;
+    }
+    
+    .botao-busca {
+        right: -3rem; /* Aproxima mais */
+    }
+    
+    .barra-busca {
+        right: -3rem;
+    }
+    
+    .botao-fechar {
+        right: -2.5rem;
+    }
+}
+
+/* Garantir que header não quebre */
+.container-cabecalho {
+    flex-wrap: nowrap;
+    min-height: 50px;
+}
+
+/* Transições suaves */
+.barra-busca,
+.botao-busca,
+.botao-fechar,
+.btn-hamburger {
+    transition: all 0.3s ease;
+}

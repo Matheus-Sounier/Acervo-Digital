@@ -1,0 +1,24 @@
+@media (max-width: 600px) {
+    .container-cabecalho {
+        gap: 12px;
+    }
+    
+    .barra-busca.is-active {
+        width: calc(100vw - 150px);
+        max-width: 350px;
+    }
+}
+
+/* Garantir que header não quebre */
+.container-cabecalho {
+    flex-wrap: nowrap;
+    min-height: 50px;
+}
+
+/* Transições suaves */
+.barra-busca,
+.botao-busca,
+.botao-fechar,
+.btn-hamburger {
+    transition: all 0.3s ease;
+}

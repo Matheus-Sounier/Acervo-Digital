@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+    .menu-navegacao {
+        gap: 10px;
+    }
+    
+    .link-navegacao {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    
+    .botao-busca span {
+        display: none; /* Remove texto "Buscar" */
+    }
+    
+    .botao-busca {
+        padding: 10px;
+        width: 42px;
+    }
+    
+    .container-busca {
+        max-width: 250px;
+    }
+    
+    .barra-busca.is-active {
+        width: 300px;
+    }
+}
+
+/* Garantir que header não quebre */
+.container-cabecalho {
+    flex-wrap: nowrap;
+    min-height: 50px;
+}
+
+/* Transições suaves */
+.barra-busca,
+.botao-busca,
+.botao-fechar,
+.btn-hamburger {
+    transition: all 0.3s ease;
+}

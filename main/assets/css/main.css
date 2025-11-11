@@ -32,4 +32,7 @@
 @import url('./responsive/tablet.css');
 @import url('./responsive/mobile.css');
 @import url('./responsive/small-mobile.css');
-@import url('./responsive/extra-small.css');
+@import url('./responsive/larger-mobile.css');
+@import url('./responsive/inicial.css');
+@import url('./responsive/inter.css');
+@import url('./responsive/trans-mobile.css');

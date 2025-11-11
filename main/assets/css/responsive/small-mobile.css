@@ -1,272 +1,147 @@
-/* @media (max-width: 480px) {
-    /* Header 
+@media (max-width: 370px) {
     header {
-        padding: 12px 15px;
+        padding: 8px 12px;
     }
     
     .container-cabecalho {
-        gap: 10px;
-    }
-    
-    .logo img {
-        width: 30px;
-        height: 30px;
-    }
-    
-    /* Busca 
-    .botao-busca {
-        padding: 10px;
-        width: 40px;
-        height: 40px;
-    }
-    
-    .barra-busca input {
-        padding: 10px 45px 10px 12px;
-        font-size: 13px;
-    }
-    
-    .barra-busca.is-active {
-        width: calc(100vw - 80px);
-    }
-    
-    /* Seções 
-    .secao-hero,
-    .secao-colecoes {
-        padding: 30px 15px;
-    }
-    
-    .titulo-secao {
-        font-size: 1.75rem;
-        margin-bottom: 25px;
-    }
-    
-    /* Carrossel 
-    .carrossel {
-        height: 280px;
-        border-radius: 15px;
-    }
-    
-    .overlay-slide {
-        padding: 20px 15px;
-    }
-    
-    .overlay-slide h2 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .overlay-slide p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-    
-    .botao-carrossel {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-    
-    .botao-anterior {
-        left: 8px;
-    }
-    
-    .botao-proximo {
-        right: 8px;
-    }
-    
-    .indicadores-carrossel {
-        bottom: 10px;
         gap: 8px;
     }
     
+    /* LOGO */
+    .logo img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    /* BUSCA */
+    .botao-busca {
+        width: 40px;
+        height: 40px;
+        padding: 7px;
+    }
+    
+    .barra-busca.is-active {
+        width: calc(100vw - 110px);
+        max-width: 280px;
+    }
+    
+    .barra-busca input {
+        padding: 5px 40px 5px 10px;
+        font-size: 12px;
+    }
+    
+    .botao-fechar {
+        right: 6px;
+        width: 26px;
+        height: 26px;
+        font-size: 16px;
+    }
+    
+    /* HAMBURGER */
+    .btn-hamburger {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .btn-hamburger span {
+        width: 20px;
+        height: 2px;
+    }
+    
+    /* MENU MOBILE */
+    .menu-mobile {
+        width: 85%;
+    }
+    
+    .mobile-link {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+    
+    /* CARROSSEL */
+    .carrossel {
+        height: 240px;
+    }
+    
+    .overlay-slide {
+        padding: 15px;
+    }
+    
+    .overlay-slide h2 {
+        font-size: 1.3rem;
+    }
+    
+    .botao-carrossel {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .indicadores-carrossel {
+        gap: 6px;
+    }
+    
     .indicador {
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
     }
     
     .indicador.is-active {
-        width: 30px;
+        width: 24px;
     }
     
-    /* Cards de coleções 
-    .card-colecao {
-        border-radius: 15px;
+    /* PROJETOS */
+    .secao-colecoes {
+        padding: 30px 12px;
+    }
+    
+    .titulo-secao {
+        font-size: 1.6rem;
+    }
+    
+    .grid-colecoes {
+        gap: 18px;
     }
     
     .card-colecao img {
         height: 220px;
     }
     
-    .conteudo-card {
-        padding: 20px 15px;
-    }
-    
     .titulo-card {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
+        font-size: 1.1rem;
     }
     
     .descricao-card {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-    
-    /* Cards das feiras 
-    .card-grid {
-        gap: 30px;
-    }
-    
-    .card-inner {
-        min-height: 280px;
-        max-height: 280px;
-    }
-    
-    .card-face {
-        padding: 18px;
-    }
-    
-    .card-front h2 {
-        font-size: 1.2rem;
-    }
-    
-    .card-front p {
-        font-size: 0.9rem;
-    }
-    
-    .card-back h3 {
-        font-size: 1.1rem;
-    }
-    
-    .card-back p {
-        font-size: 0.9rem;
-    }
-    
-    .cta-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .cta-buttons a {
-        padding: 12px;
-        font-size: 0.95rem;
-    }
-    
-    /* Botão adicionar projeto 
-    .btn-adiciona-projeto-section {
-        padding: 50px 15px;
-    }
-    
-    .container-adiciona-projeto {
-        padding: 25px 15px;
-        border-radius: 15px;
-    }
-    
-    .container-adiciona-projeto h2 {
-        font-size: 1.5rem;
-        margin-bottom: 12px;
-    }
-    
-    .container-adiciona-projeto .subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 25px;
-    }
-    
-    .btn-adiciona-projeto {
-        padding: 12px 25px;
-        font-size: 0.95rem;
-        gap: 8px;
-    }
-    
-    .btn-icon {
-        font-size: 1.3rem;
-    }
-    
-    /* Rodapé 
-    .rodape {
-        padding: 35px 15px 0;
-    }
-    
-    .coluna-rodape {
-        text-align: center;
-    }
-    
-    .titulo-coluna {
-        font-size: 1.1rem;
-        margin-bottom: 15px;
-    }
-    
-    .descricao-rodape {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-    
-    .lista-links,
-    .lista-contato {
-        font-size: 0.9rem;
-    }
-    
-    .redes-sociais {
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .redes-sociais img {
-        width: 32px;
-        height: 32px;
-    }
-    
-    .rodape-inferior {
-        padding: 18px 0;
         font-size: 0.85rem;
     }
     
-    /* Login 
-    body {
-        padding: 10px;
+    /* FOOTER */
+    .rodape {
+        padding: 30px 12px 0;
     }
     
-    .cabecalho-login {
-        padding: 30px 20px;
-        border-radius: 7px 7px 0 0;
+    .descricao-rodape,
+    .lista-links li a,
+    .lista-contato li span {
+        font-size: 0.85rem;
     }
     
-    .cabecalho-login h1 {
-        font-size: 24px;
+    .redes-sociais img {
+        width: 30px;
+        height: 30px;
     }
-    
-    .cabecalho-login p {
-        font-size: 13px;
-    }
-    
-    .formulario-login {
-        padding: 30px 20px;
-    }
-    
-    .opcoes-formulario {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
-    }
-    
-    .login-social {
-        flex-direction: column;
-        gap: 12px;
-    }
-    
-    .btn-rede {
-        font-size: 14px;
-        padding: 12px;
-    }
-} */
+}
 
+/* Garantir que header não quebre */
+.container-cabecalho {
+    flex-wrap: nowrap;
+    min-height: 50px;
+}
 
-@media (max-width: 480px) {
-    header { padding: 12px 15px; }
-    .logo img { width: 30px; height: 30px; }
-    .carrossel { height: 280px; border-radius: 15px; }
-    .overlay-slide h2 { font-size: 1.5rem; }
-    .titulo-secao { font-size: 1.75rem; }
-
-    .card-inner { min-height: 280px; }
-    .rodape { padding: 35px 15px 0; }
+/* Transições suaves */
+.barra-busca,
+.botao-busca,
+.botao-fechar,
+.btn-hamburger {
+    transition: all 0.3s ease;
 }

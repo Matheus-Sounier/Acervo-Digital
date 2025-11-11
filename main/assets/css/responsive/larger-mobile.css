@@ -1,0 +1,113 @@
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+    
+    .container-cabecalho {
+        gap: 10px;
+    }
+    
+    /* LOGO */
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* BUSCA */
+    .botao-busca {
+        width: 42px;
+        height: 42px;
+        padding: 8px;
+    }
+    
+    .barra-busca.is-active {
+        width: calc(100vw - 130px);
+        max-width: 300px;
+    }
+    
+    .barra-busca input {
+        padding: 5px 45px 5px 12px;
+        font-size: 13px;
+    }
+    
+    .botao-fechar {
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+    }
+    
+    /* HAMBURGER */
+    .btn-hamburger {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .btn-hamburger span {
+        width: 22px;
+        height: 2.5px;
+    }
+    
+    /* CARROSSEL */
+    .carrossel {
+        height: 280px;
+    }
+    
+    .overlay-slide {
+        padding: 20px;
+    }
+    
+    .overlay-slide h2 {
+        font-size: 1.5rem;
+    }
+    
+    .botao-carrossel {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .indicadores-carrossel {
+        gap: 8px;
+    }
+    
+    .indicador {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .indicador.is-active {
+        width: 30px;
+    }
+    
+    /* PROJETOS */
+    .titulo-secao {
+        font-size: 1.8rem;
+    }
+    
+    .card-colecao img {
+        height: 250px;
+    }
+    
+    .titulo-card {
+        font-size: 1.2rem;
+    }
+    
+    .descricao-card {
+        font-size: 0.9rem;
+    }
+}
+
+/* Garantir que header não quebre */
+.container-cabecalho {
+    flex-wrap: nowrap;
+    min-height: 50px;
+}
+
+/* Transições suaves */
+.barra-busca,
+.botao-busca,
+.botao-fechar,
+.btn-hamburger {
+    transition: all 0.3s ease;
+}

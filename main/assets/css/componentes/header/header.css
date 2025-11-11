@@ -28,15 +28,6 @@ header {
     z-index: 1000;
 }
 
-/* .btn-hamburger span {
-    width: 24px;
-    height: 3px;
-    left: 0;    
-    background: var(--color-white);
-    border-radius: 2px;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-} */
-
 .btn-hamburger span {
     display: block;
     height: 3px;

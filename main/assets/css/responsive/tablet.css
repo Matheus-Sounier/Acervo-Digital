@@ -1,25 +1,79 @@
 @media (max-width: 1024px) {
-    /* Header */
-    header { padding: 15px 30px; }
-    .container-cabecalho { gap: 20px; }
-    .logo { font-size: 1.3rem; gap: 10px; }
-    .logo img { width: 40px; height: 40px; }
-    .menu-navegacao { gap: 20px; }
-    .link-navegacao { font-size: 14px; padding: 6px 12px; }
-
-    /* Carrossel */
-    .carrossel { height: 400px; }
-    .overlay-slide h2 { font-size: 2.5rem; }
-
-    /* Cards */
-    .grid-colecoes, .card-grid {
+    header {
+        padding: 15px 20px;
+    }
+    
+    .container-cabecalho {
+        gap: 20px;
+    }
+    
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .menu-navegacao {
+        margin: 0; /* Remove margem negativa */
+        gap: 15px;
+    }
+    
+    .link-navegacao {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .container-busca {
+        max-width: 300px;
+    }
+    
+    .botao-busca {
+        right: -2rem;
+        padding: 10px 15px;
+    }
+    
+    .barra-busca {
+        right: -2rem;
+    }
+    
+    .barra-busca.is-active {
+        width: 350px;
+    }
+    
+    .botao-fechar {
+        right: -1.5rem;
+    }
+    
+    .link-login {
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+    
+    /* PROJETOS */
+    .grid-colecoes {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-
-    /* Footer */
+    
+    /* FOOTER */
     .container-rodape {
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
     }
+}
+
+/* Garantir que header não quebre */
+.container-cabecalho {
+    flex-wrap: nowrap;
+    min-height: 50px;
+}
+
+/* Transições suaves */
+.barra-busca,
+.botao-busca,
+.botao-fechar,
+.btn-hamburger {
+    transition: all 0.3s ease;
 }
