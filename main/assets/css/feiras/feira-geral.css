@@ -51,7 +51,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 40px;
 }
 
@@ -157,12 +156,10 @@ section {
 
 /* ========== FRENTE COM IMAGEM (apenas adiciona imagem) ========== */
 .card-front.one {
+    background: url("https://lh3.googleusercontent.com/p/AF1QipPCRJxqnv-HbHv_LjZcostcq3hkNxy8EtnLygqc=s680-w680-h510-rw");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* Escurece e dessatura a imagem */
-    filter: brightness(0.68) contrast(1.4) saturate(0.7);
-    transition: all 0.4s ease;
 }
 
 /* Texto sobre a imagem precisa de sombra forte */
@@ -234,6 +231,7 @@ ul.features li {
 .cta-buttons a.primary {
   background: var(--accent-cyan);
   color: #000;
+  padding: 10px;
 }
 
 .cta-buttons a.primary:hover {
@@ -248,34 +246,6 @@ ul.features li {
 
 .cta-buttons a.secondary:hover {
   background: rgba(0, 255, 255, 0.1);
-}
-
-/* ========== RESPONSIVO ========== */
-@media (max-width: 768px) {
-  section {
-    padding: 20px;
-  }
-  
-  .card-inner {
-    min-height: 300px;
-    max-height: 300px;
-  }
-  
-  .card-face {
-    padding: 18px;
-  }
-  
-  .card-front h2 {
-    font-size: 1.3rem;
-  }
-  
-  .card-back h3 {
-    font-size: 1.2rem;
-  }
-  
-  ul.features li {
-    font-size: 0.9rem;
-  }
 }
 
 h1 {

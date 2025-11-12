@@ -24,6 +24,31 @@
         flex: 1;
         justify-content: center;
     }
+
+    section {
+        padding: 20px;
+    }
+    
+    .card-inner {
+        min-height: 300px;
+        max-height: 300px;
+    }
+    
+    .card-face {
+        padding: 18px;
+    }
+    
+    .card-front h2 {
+        font-size: 1.3rem;
+    }
+    
+    .card-back h3 {
+        font-size: 1.2rem;
+    }
+    
+    ul.features li {
+        font-size: 0.9rem;
+    }
     
     .botao-busca {
         position: static; /* Remove absolute */

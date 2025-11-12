@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <a href="./cadastrar.php" class="esqueceu-senha">Esqueceu a senha?</a>
             </div>
 
-            <button type="submit" class="btn-entrar">Entrar</button>
+            <button type="submit" class="btn-entrar">Área administrativa</button>
             
             <br>
             <?php if (isset($mensagemErro)): ?>

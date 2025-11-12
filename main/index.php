@@ -24,7 +24,7 @@
         <div class="container-cabecalho">
             
             <!-- Logo (Esquerda) -->
-            <a href="./controller/login.php" class="logo" aria-label="Página inicial">
+            <a href="./index.php" class="logo" aria-label="Página inicial">
                 <img src="./assets/img/Logos/logo_Fucapi.png" alt="Logo FUCAPI">
             </a>
             
@@ -56,11 +56,11 @@
             
             <!-- Menu de Navegação (Direita) -->
             <nav class="menu-navegacao" aria-label="Menu principal">
-                <a href="./controller/login.php" class="link-navegacao">Projetos</a>
-                <a href="./controller/login.php" class="link-navegacao">Sobre</a>
+                <a href="./assets/pages/links/feiras-geral.html" class="link-navegacao">Projetos</a>
+                <a href="./assets/pages/links/sobre.html" class="link-navegacao">Sobre</a>
             </nav>
 
-            <a href="./controller/login.php" class="link-login">Entrar</a>
+            <a href="./controller/login.php" class="link-login">Área Restrita</a>
             
         </div>
     </header>
@@ -131,7 +131,7 @@
             
             <!-- Card 1 -->
             <article class="card-colecao" data-nome="XIII FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2016" data-tags="XIII, FEIRA, TECNOLÓGICA, TECNOLOGICA, DA, FUCAPI, CRIATIVIDADE, INOVAÇÃO, SUPERANDO, DESAFIOS, 2016">
-            <a href="./controller/login.php">
+            <a href="./assets/pages/feiras/feira-2016.html">
                 <img src="./assets/img/Cards/_MG_1760.JPG" alt="XIII FEIRA TECNOLÓGICA DA FUCAPI">
                 <div class="conteudo-card">
                     <h3 class="titulo-card">XIII FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -142,7 +142,7 @@
 
             <!-- Card 2 -->
             <article class="card-colecao" data-nome="XIV FEIRA TECNOLÓGICA FUCAPI" data-ano="2017" data-tags="XIV, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, MATEMÁTICA, SUAS, SOLUÇÕES, PARA, PLANETA, 2017">
-                <a href="./controller/login.php">
+                <a href="./assets/pages/feiras/feira-2017.html">
                     <img src="./assets/img/Cards/_MG_1902.JPG" alt="XIV FEIRA TECNOLÓGICA DA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XIV FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -153,7 +153,7 @@
 
             <!-- Card 3 -->
             <article class="card-colecao" data-nome="VIII FEIRA TECNOLÓGICA FUCAPI" data-ano="2011" data-tags="VIII, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, CONSTRUINDO, CONHECIMENTO">
-                <a href="./controller/login.php">
+                <a href="./assets/pages/feiras/feira-2011.html">
                     <img src="./assets/img/Cards/_MG_1710.JPG" alt="VIII FEIRA TECNOLÓGICA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">VIII FEIRA TECNOLÓGICA FUCAPI</h3>
@@ -164,7 +164,7 @@
 
             <!-- Card 4 -->
             <article class="card-colecao" data-nome="XVII FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2022" data-tags="2022, XVII, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, 40, ANOS, INOVAÇÃO, ENSINO, AMAZÔNIA, AMAZONIA">
-                <a href="./controller/login.php">
+                <a href="./assets/pages/feiras/feira-2022.html">
                     <img src="./assets/img/Cards/_MG_1346.JPG" alt="Projeto Meio Ambiente">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XVII FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -175,7 +175,7 @@
 
             <!-- Card 5 -->
             <article class="card-colecao" data-nome="XVIII FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2023" data-tags="2023, XVIII, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, INCLUSÃO, INCLUSÃO, SOCIAL, TECNOLOGIA">
-                <a href="./controller/login.php">
+                <a href="./assets/pages/feiras/feira-2023.html">
                     <img src="./assets/img/Cards/_MG_1142.JPG" alt="XVIII FEIRA TECNOLÓGICA DA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XVIII FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -186,7 +186,7 @@
 
             <!-- Card 6 -->
             <article class="card-colecao" data-nome="XVI FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2019" data-tags="2019, XVI, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, PROCESSOS, INDUSTRIAIS, TECNOLOGIAS">
-                <a href="./controller/login.php">
+                <a href="./assets/pages/feiras/feira-2019.html">
                     <img src="./assets/img/Cards/_MG_1611.JPG" alt="XVI FEIRA TECNOLÓGICA DA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XVI FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -228,10 +228,8 @@
             <div class="coluna-rodape">
                 <h4 class="titulo-coluna">Links Rápidos</h4>
                 <ul class="lista-links">
-                    <li><a href="../assets/pages/links/feiras-geral.html">Projetos</a></li>
-                    <li><a href="../assets/pages/links/sobre.html">Sobre Nós</a></li>
-                    <li><a href="#visita">Visita Virtual</a></li>
-                    <li><a href="#colecoes">Coleções</a></li>
+                    <li><a href="./assets/pages/links/feiras-geral.html">Projetos</a></li>
+                    <li><a href="./assets/pages/links/sobre.html">Sobre Nós</a></li>
                     <li><a href="#eventos">Eventos</a></li>
                 </ul>
             </div>
