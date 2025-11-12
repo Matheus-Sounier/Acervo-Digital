@@ -38,7 +38,7 @@
                 <form class="barra-busca" role="search">
                     <input 
                         type="search" 
-                        placeholder="Buscar projetos por nome, categoria ou ano..." 
+                        placeholder="Buscar projetos..." 
                         aria-label="Campo de busca"
                         autocomplete="off">
                     <button type="submit" aria-label="Pesquisar">
@@ -54,7 +54,7 @@
             
             <!-- Menu de Navegação (Direita) -->
             <nav class="menu-navegacao" aria-label="Menu principal">
-                <a href="./assets/pages/links/feiras-geral.html" class="link-navegacao">Projetos</a>
+                <a href="./assets/pages/links/feiras-geral.html" class="link-navegacao">Feiras</a>
                 <a href="./assets/pages/links/sobre.html" class="link-navegacao">Sobre</a>
             </nav>
 

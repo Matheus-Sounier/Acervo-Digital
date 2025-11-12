@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     header {
         padding: 10px 15px;
     }
@@ -15,32 +15,43 @@
     
     /* BUSCA */
     .botao-busca {
-        width: 42px;
-        height: 42px;
-        padding: 8px;
+        position: static; /* Remove absolute */
+        right: auto;
+        width: 40px;
+        height: 40px;
     }
     
+    .barra-busca {
+        /* position: absolute; */
+        right: 20.5%;
+        transform: translate(14.5%, -50%);
+        top: 50%;
+    }
+
     .barra-busca.is-active {
-        width: calc(100vw - 130px);
-        max-width: 300px;
+        width: calc(100vw - 100px);
+        max-width: 250px;
     }
-    
-    .barra-busca input {
-        padding: 5px 45px 5px 12px;
-        font-size: 13px;
+
+    .barra-busca.is-active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
     }
-    
+
     .botao-fechar {
-        right: 8px;
-        width: 28px;
-        height: 28px;
-        font-size: 18px;
+        right: auto;
     }
-    
+
     /* HAMBURGER */
     .btn-hamburger {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
     }
     
     .btn-hamburger span {

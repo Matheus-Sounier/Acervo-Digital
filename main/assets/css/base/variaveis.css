@@ -27,6 +27,7 @@
     
     /* Spacing */
     --max-width: 1400px;
+    --spacing: 60px;
     --spacing-sm: 20px;
     --spacing-md: 40px;
     --spacing-lg: 80px;

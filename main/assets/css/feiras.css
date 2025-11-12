@@ -13,10 +13,6 @@
 /* @import url('./feiras/feira-geral.css'); */
 @import url('./feiras/feira-2024.css');
 
-body.feira {
-  /* exemplo de override de espaçamento */
-    --spacing: 60px;
-}
 
 .hero-projeto {
   /* ajuste de posição da imagem de fundo para feiras */

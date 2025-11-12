@@ -29,10 +29,11 @@
 @import url('./componentes/cards/colecao.css');
 
 /* Responsive */
-@import url('./responsive/tablet.css');
-@import url('./responsive/mobile.css');
-@import url('./responsive/small-mobile.css');
-@import url('./responsive/larger-mobile.css');
-@import url('./responsive/inicial.css');
-@import url('./responsive/inter.css');
-@import url('./responsive/trans-mobile.css');
+@import url('./responsive/1200.css');
+@import url('./responsive/1024.css');
+@import url('./responsive/900.css');
+@import url('./responsive/768.css');
+@import url('./responsive/700.css');
+@import url('./responsive/600.css');
+@import url('./responsive/500.css');
+@import url('./responsive/370.css');

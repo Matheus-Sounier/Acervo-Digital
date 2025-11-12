@@ -22,7 +22,7 @@
         position: static; /* Remove position relative */
         max-width: none;
         flex: 1;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     section {
@@ -58,16 +58,15 @@
     }
     
     .barra-busca {
-        position: absolute;
-        right: 100%;
-        transform: translate(50%, -50%);
+        /* position: absolute; */
+        right: 16%;
+        transform: translate(16%, -50%);
         top: 50%;
     }
 
     .barra-busca.is-active {
         width: calc(100vw - 180px);
-        max-width: 300px;
-        margin: 0 300px;
+        max-width: 350px;
     }
 
     .barra-busca.is-active::before {
@@ -80,7 +79,7 @@
     }
 
     .botao-fechar {
-        margin: 0 150px;
+        right: auto;
     }
     
     /* MENU - Esconder desktop */

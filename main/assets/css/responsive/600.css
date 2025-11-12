@@ -1,0 +1,64 @@
+@media (max-width: 600px) {
+    .botao-busca {
+        position: static; /* Remove absolute */
+        right: auto;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .barra-busca {
+        /* position: absolute; */
+        right: 18%;
+        transform: translate(14.5%, -50%);
+        top: 50%;
+    }
+
+    .barra-busca.is-active {
+        width: calc(100vw - 160px);
+        max-width: 280px;
+    }
+
+    .barra-busca.is-active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .botao-fechar {
+        right: auto;
+    }
+
+    /* PROJETOS */
+    .titulo-secao {
+        font-size: 1.8rem;
+    }
+    
+    .card-colecao img {
+        height: 220px;
+    }
+    
+    .titulo-card {
+        font-size: 1.2rem;
+    }
+    
+    .descricao-card {
+        font-size: 0.9rem;
+    }
+}
+
+/* Garantir que header não quebre */
+.container-cabecalho {
+    flex-wrap: nowrap;
+    min-height: 50px;
+}
+
+/* Transições suaves */
+.barra-busca,
+.botao-busca,
+.botao-fechar,
+.btn-hamburger {
+    transition: all 0.3s ease;
+}

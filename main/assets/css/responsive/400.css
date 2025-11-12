@@ -1,4 +1,4 @@
-@media (max-width: 370px) {
+@media (max-width: 400px) {
     header {
         padding: 8px 12px;
     }
@@ -15,26 +15,35 @@
     
     /* BUSCA */
     .botao-busca {
-        width: 40px;
-        height: 40px;
-        padding: 7px;
+        position: static; /* Remove absolute */
+        right: auto;
+        width: 30px;
+        height: 30px;
     }
     
+    .barra-busca {
+        /* position: absolute; */
+        right: 10%;
+        transform: translate(14.5%, -50%);
+        top: 50%;
+    }
+
     .barra-busca.is-active {
-        width: calc(100vw - 110px);
-        max-width: 280px;
+        width: calc(100vw - 130px);
+        max-width: 200px;
     }
-    
-    .barra-busca input {
-        padding: 5px 40px 5px 10px;
-        font-size: 12px;
+
+    .barra-busca.is-active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
     }
-    
+
     .botao-fechar {
-        right: 6px;
-        width: 26px;
-        height: 26px;
-        font-size: 16px;
+        right: 20px;
     }
     
     /* HAMBURGER */
@@ -45,12 +54,12 @@
     
     .btn-hamburger span {
         width: 20px;
-        height: 2px;
+        height: 3px;
     }
     
     /* MENU MOBILE */
     .menu-mobile {
-        width: 85%;
+        width: 100%;
     }
     
     .mobile-link {
@@ -104,7 +113,7 @@
     }
     
     .card-colecao img {
-        height: 220px;
+        height: 180px;
     }
     
     .titulo-card {
@@ -131,6 +140,7 @@
         height: 30px;
     }
 }
+
 
 /* Garantir que header não quebre */
 .container-cabecalho {

@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
-    padding: 50px 20px;
-        }
+    min-height: 600px;
+    padding: 30px 10px;
+}
 
 .icon-button {
     width: 70px;
