@@ -13,7 +13,7 @@
 .titulo-secao {
     font-size: 2.5rem;
     color: var(--color-accent);
-    margin-bottom: 50px;
+    margin: 40px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;

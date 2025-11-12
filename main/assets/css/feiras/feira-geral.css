@@ -45,19 +45,10 @@
   padding: 0;
 }
 
-section {
-  color: var(--text-light);
-  font-family: "Inter", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-}
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 60px;
+  gap: 50px;
   width: 100%;
   max-width: 1200px;
 }
@@ -70,10 +61,12 @@ section {
 }
 
 .secao-colecoes {
-  display: block;
-  padding: 40px 20px;
+  display: flex;
+  padding: 30px 15px;
   min-height: auto;
   color: var(--text-light);
+  justify-content: center;
+  align-items: center;
 }
 
 .card-inner {
@@ -83,7 +76,7 @@ section {
   max-height: 360px;
   transform-style: preserve-3d;
   border-radius: var(--radius-lg);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .card.flipped .card-inner {
@@ -115,7 +108,7 @@ section {
               0 0 25px rgba(0, 255, 255, 0.15) inset;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s;
+  transition: opacity 0.3s;
 }
 
 .card:hover .card-face::before,
@@ -160,6 +153,8 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(0.65) contrast(1.1) saturate(0.6);
+    transition: all 0.3s ease;
 }
 
 /* Texto sobre a imagem precisa de sombra forte */
@@ -167,14 +162,14 @@ section {
 .card-front.one p {
     color: var(--color-primary);
     text-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.9),
-        0 2px 4px rgba(0, 0, 0, 0.8),
-        0 1px 2px rgba(0, 0, 0, 0.9);
+        0 4px 8px rgba(0, 0, 0, 0.6),
+        0 2px 4px rgba(0, 0, 0, 0.5),
+        0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* Hover: clareia a imagem */
 .card:hover .card-front.one{
-    filter: brightness(0.75) contrast(1) saturate(0.6);
+    filter: brightness(0.74) contrast(0.8);
 }
 
 /* ========== VERSO DO CARD ========== */
@@ -246,6 +241,31 @@ ul.features li {
 
 .cta-buttons a.secondary:hover {
   background: rgba(0, 255, 255, 0.1);
+}
+
+/* Botão Adiciona Projeto */
+.adiciona-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+
+}
+
+.container-adiciona {
+  background: var(--card-bg-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.container-adiciona:hover {
+  box-shadow: var(--shadow-gb);
+  transform: translateY(-2px);
 }
 
 h1 {

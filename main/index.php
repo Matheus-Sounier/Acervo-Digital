@@ -30,10 +30,8 @@
             
             <!-- Container de Busca (Centro) -->
             <div class="container-busca">
-                <!-- Botão que mostra inicialmente -->
                 <button class="botao-busca" aria-label="Abrir busca">
                     <i class="fas fa-search"></i>
-                    <!-- <span>Buscar projetos...</span> -->
                 </button>
                 
                 <!-- Barra de busca (expansível) -->
@@ -89,7 +87,7 @@
 
                 <!-- Slide 3 -->
                 <div class="slide-carrossel">
-                    <img src="./assets/img/Carrosel/vi.JPG" alt="Projeto Trava Eletrônica">
+                    <img src="./assets/img/Carrosel/NEFD0429.jpg" alt="Projeto Trava Eletrônica">
                     <div class="overlay-slide">
                         <h2>Projeto em Destaque:<br>Trava Eletrônica</h2>
                     </div>
@@ -126,7 +124,7 @@
     <!-- ========== SEÇÃO COLEÇÕES (PROJETOS) ========== -->
     <section class="secao-colecoes" id="projetos">
         <h2 class="titulo-secao">Continue explorando...</h2>
-
+        <div class="erro" id="erro"></div>
         <div class="grid-colecoes" id="container-projetos">
             
             <!-- Card 1 -->
