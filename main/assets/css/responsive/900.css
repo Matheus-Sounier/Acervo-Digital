@@ -24,6 +24,11 @@
     .barra-busca.is-active {
         width: 300px;
     }
+
+    .card-inner {
+        min-height: 380px;
+        max-height: 380px;
+    }
 }
 
 /* Garantir que header não quebre */

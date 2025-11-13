@@ -9,13 +9,11 @@
 @import url('./componentes/footer/footer.social.css');
 @import url('./componentes/footer/footer.btn.css');
 
-/* Definições específicas para páginas de feiras */
-/* @import url('./feiras/feira-geral.css'); */
+/* Feira Geral */
 @import url('./feiras/feira-2024.css');
 
 
 .hero-projeto {
-  /* ajuste de posição da imagem de fundo para feiras */
     background-position: center 30%;
 }
 

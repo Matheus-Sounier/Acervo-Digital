@@ -41,6 +41,5 @@
 
     </div>
 
-    <script type="module" src="../../js/pages/login.js"></script>
 </body>
 </html>

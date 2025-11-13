@@ -19,6 +19,11 @@
     .botao-fechar {
         right: -2.5rem;
     }
+
+    .card-inner {
+        min-height: 450px;
+        max-height: 450px;
+    }
 }
 
 /* Garantir que header não quebre */

@@ -31,4 +31,9 @@
     .botao-fechar {
         right: auto;
     }
+
+    .card-inner {
+        min-height: 380px;
+        max-height: 380px;
+    }
 }

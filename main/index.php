@@ -55,13 +55,27 @@
             <!-- Menu de Navegação (Direita) -->
             <nav class="menu-navegacao" aria-label="Menu principal">
                 <a href="./assets/pages/links/feiras-geral.html" class="link-navegacao">Feiras</a>
-                <a href="./assets/pages/links/sobre.html" class="link-navegacao">Sobre</a>
+                <a href="./assets/pages/links/sobre-publi.html" class="link-navegacao">Sobre</a>
             </nav>
 
             <a href="./controller/login.php" class="link-login">Área Restrita</a>
             
+            <!-- Hamburger Menu Button -->
+            <button class="btn-hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <nav class="menu-mobile" id="menu-mobile">
+        <a href="./assets/pages/links/feiras-geral.html" class="mobile-link">Projetos</a>
+        <a href="./assets/pages/links/sobre-publi.html" class="mobile-link">Sobre</a>
+        <a href="./controller/login.php" class="mobile-link login-mobile">Área Restrita</a>
+    </nav>
 
     <!-- ========== SEÇÃO HERO (CARROSSEL) ========== -->
     <section class="secao-hero" id="home">
@@ -140,7 +154,7 @@
 
             <!-- Card 2 -->
             <article class="card-colecao" data-nome="XIV FEIRA TECNOLÓGICA FUCAPI" data-ano="2017" data-tags="XIV, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, MATEMÁTICA, SUAS, SOLUÇÕES, PARA, PLANETA, 2017">
-                <a href="./assets/pages/feiras/feira-2017.html">
+                <a href="./assets/pages/feiras/feira-publi/feira-2017-publi.html">
                     <img src="./assets/img/Cards/_MG_1902.JPG" alt="XIV FEIRA TECNOLÓGICA DA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XIV FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -151,7 +165,7 @@
 
             <!-- Card 3 -->
             <article class="card-colecao" data-nome="VIII FEIRA TECNOLÓGICA FUCAPI" data-ano="2011" data-tags="VIII, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, CONSTRUINDO, CONHECIMENTO">
-                <a href="./assets/pages/feiras/feira-2011.html">
+                <a href="./assets/pages/feiras/feira-publi/feira-2011-publi.html">
                     <img src="./assets/img/Cards/_MG_1710.JPG" alt="VIII FEIRA TECNOLÓGICA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">VIII FEIRA TECNOLÓGICA FUCAPI</h3>
@@ -162,7 +176,7 @@
 
             <!-- Card 4 -->
             <article class="card-colecao" data-nome="XVII FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2022" data-tags="2022, XVII, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, 40, ANOS, INOVAÇÃO, ENSINO, AMAZÔNIA, AMAZONIA">
-                <a href="./assets/pages/feiras/feira-2022.html">
+                <a href="./assets/pages/feiras/feira-publi/feira-2022-publi.html">
                     <img src="./assets/img/Cards/_MG_1346.JPG" alt="Projeto Meio Ambiente">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XVII FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -172,8 +186,8 @@
             </article>
 
             <!-- Card 5 -->
-            <article class="card-colecao" data-nome="XVIII FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2023" data-tags="2023, XVIII, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, INCLUSÃO, INCLUSÃO, SOCIAL, TECNOLOGIA">
-                <a href="./assets/pages/feiras/feira-2023.html">
+            <article class="card-colecao" data-nome="XVIII FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2023" data-tags="2023, XVIII, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, INCLUSÃO, INCLUSAO, SOCIAL, TECNOLOGIA">
+                <a href="./assets/pages/feiras/feira-publi/feira-2023-publi.html">
                     <img src="./assets/img/Cards/_MG_1142.JPG" alt="XVIII FEIRA TECNOLÓGICA DA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XVIII FEIRA TECNOLÓGICA DA FUCAPI</h3>
@@ -184,7 +198,7 @@
 
             <!-- Card 6 -->
             <article class="card-colecao" data-nome="XVI FEIRA TECNOLÓGICA DA FUCAPI" data-ano="2019" data-tags="2019, XVI, FEIRA, TECNOLÓGICA, TECNOLOGICA, FUCAPI, PROCESSOS, INDUSTRIAIS, TECNOLOGIAS">
-                <a href="./assets/pages/feiras/feira-2019.html">
+                <a href="./assets/pages/feiras/feira-publi/feira-2019-publi.html">
                     <img src="./assets/img/Cards/_MG_1611.JPG" alt="XVI FEIRA TECNOLÓGICA DA FUCAPI">
                     <div class="conteudo-card">
                         <h3 class="titulo-card">XVI FEIRA TECNOLÓGICA DA FUCAPI</h3>

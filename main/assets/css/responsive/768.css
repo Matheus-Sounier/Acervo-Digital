@@ -30,8 +30,8 @@
     }
     
     .card-inner {
-        min-height: 300px;
-        max-height: 300px;
+        min-height: 380px;
+        max-height: 380px;
     }
     
     .card-face {
@@ -58,7 +58,6 @@
     }
     
     .barra-busca {
-        /* position: absolute; */
         right: 16%;
         transform: translate(16%, -50%);
         top: 50%;
