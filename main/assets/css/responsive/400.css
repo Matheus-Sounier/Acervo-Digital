@@ -12,25 +12,31 @@
         width: 32px;
         height: 32px;
     }
+
+    .btn-voltar {
+        font-size: 0.85rem;
+    }
     
     /* BUSCA */
     .botao-busca {
         position: static; /* Remove absolute */
         right: auto;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .barra-busca {
         /* position: absolute; */
-        right: 10%;
-        transform: translate(14.5%, -50%);
+        right: 20%;
         top: 50%;
     }
 
     .barra-busca.is-active {
         width: calc(100vw - 130px);
-        max-width: 200px;
+        max-width: 130px;
     }
 
     .barra-busca.is-active::before {
@@ -43,7 +49,7 @@
     }
 
     .botao-fechar {
-        right: 20px;
+        right: auto;
     }
     
     /* HAMBURGER */

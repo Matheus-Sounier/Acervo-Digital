@@ -94,6 +94,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
     </div>
 
-    <!-- <script type="module" src="../assets/js/pages/login.js"></script> -->
 </body>
 </html>

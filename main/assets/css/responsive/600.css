@@ -1,4 +1,14 @@
 @media (max-width: 600px) {
+
+    .overlay-slide h2 {
+        font-size: 1.6rem;
+    }
+    
+    .botao-carrossel {
+        width: 42px;
+        height: 42px;
+    }
+    
     .botao-busca {
         position: static; /* Remove absolute */
         right: auto;
@@ -8,14 +18,14 @@
     
     .barra-busca {
         /* position: absolute; */
-        right: 16%;
+        right: 19%;
         transform: translate(14.5%, -50%);
         top: 50%;
     }
 
     .barra-busca.is-active {
         width: calc(100vw - 160px);
-        max-width: 280px;
+        max-width: 220px;
     }
 
     .barra-busca.is-active::before {
@@ -46,6 +56,24 @@
     
     .descricao-card {
         font-size: 0.9rem;
+    }
+
+    .grid-colecoes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-inner {
+        min-height: 350px;
+        max-height: 350px;
+    }
+
+    .titulo-card {
+        font-size: 0.8rem;
+    }
+    
+    .descricao-card {
+        font-size: 0.7rem;
     }
 }
 

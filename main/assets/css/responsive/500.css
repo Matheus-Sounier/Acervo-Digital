@@ -30,7 +30,7 @@
 
     .barra-busca.is-active {
         width: calc(100vw - 100px);
-        max-width: 250px;
+        max-width: 200px;
     }
 
     .barra-busca.is-active::before {
